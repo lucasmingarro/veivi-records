@@ -1,26 +1,42 @@
 const posts = [
   {
-    title: "My Awesome Track",
+    title: "PS: Only for iPod... 🎵",
     date: "2024-11-24", // Formato YYYY-MM-DD
     image: "/images/tracks/2024-11-24-TheWolf.jpeg", // Ruta a la imagen
-    imagePosition: "left", // left or right
+    imagePosition: "right", // left or right
     audio: "/audio/2024-11-24-TheWolf.mpeg", // Ruta al MP3
-    content: "Esta es la descripción o texto relacionado con la música.",
+    content: `
+    Good evening!
+    Greetings to Veivi Records...
+    `
   },
-  // {
-  //   title: "Another Great Track",
-  //   date: "2024-11-26",
-  //   image: "/images/tracks/great-track.jpg",
-  //   audio: "/audio/great-track.mp3",
-  //   content: "Otro gran tema para disfrutar.",
-  // },
-  // {
-  //   title: "Cool Vibes",
-  //   date: "2024-11-25",
-  //   image: "/images/tracks/cool-vibes.jpg",
-  //   audio: "/audio/cool-vibes.mp3",
-  //   content: "Relajate y disfrutá estas vibras geniales.",
-  // },
+  {
+    title: "Here comes Polly Jean",
+    date: "2024-10-03",
+    image: "/images/tracks/2024-10-03-PollyJean.webp",
+    imagePosition: "left", // left or right
+    audio: "/audio/2024-10-03-PollyJean.mpeg",
+    content: `
+    Queridines,
+    Muy buenas noches!
+    Con ustedes Polly Jean,
+    Saludos,
+    Veivi Récords`,
+  },
+  {
+    title: "My Eden",
+    date: "2024-09-04",
+    image: "/images/tracks/2024-10-03-Eden.jpg",
+    imagePosition: "right", // left or right
+    audio: "/audio/2024-10-03-Eden.mpeg",
+    content: `
+  Queridines,
+  Printemps!
+
+  Saludos,
+  Veivi Récords`,
+  },
+
 ];
 
 export default posts;

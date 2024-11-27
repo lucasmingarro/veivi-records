@@ -40,12 +40,12 @@ export default function Feed() {
           hasMore={hasMore}
           loader={
             <p className="text-center my-4 text-dark dark:text-gray-200 transition-colors">
-              Cargando más publicaciones...
+              Loading ...
             </p>
           }
           endMessage={
             <p className="text-center my-4 text-gray-600 dark:text-gray-400 transition-colors">
-              ¡Ya viste todo!
+              That&apos;s all folks!
             </p>
           }
         >
@@ -53,7 +53,7 @@ export default function Feed() {
             {visiblePosts.map((post, index) => (
               <div
                 key={index}
-                className="p-6 border rounded-lg shadow-md bg-white dark:bg-slate-900 dark:border-gray-800 transition-colors flex flex-col md:flex-row items-start md:items-start"
+                className="p-6 border rounded-lg shadow-md bg-white dark:bg-slate-900 dark:border-gray-800 transition-colors flex flex-col md:flex-row items-start md:items-start md:gap-6 gap-4"
               >
                 {post.image && post.imagePosition === "left" && (
                   <Image
@@ -61,7 +61,7 @@ export default function Feed() {
                     alt={post.title}
                     width={400}
                     height={250}
-                    className="md:w-1/2 h-48 object-cover rounded-md mb-4 md:mb-0 md:mr-4"
+                    className="md:w-1/4 h-48 object-cover rounded-md md:pr-6 mb-4 md:mb-0"
                   />
                 )}
                 <div className="flex-1">
@@ -84,7 +84,8 @@ export default function Feed() {
                   )}
                   {/* Texto de Contenido */}
                   {post.content && (
-                    <p className="text-gray-600 dark:text-gray-300 transition-colors">
+                    <p className="text-gray-600 dark:text-gray-300 transition-colors"
+                      style={{ whiteSpace: "pre-wrap" }}>
                       {post.content}
                     </p>
                   )}
@@ -95,7 +96,7 @@ export default function Feed() {
                     alt={post.title}
                     width={400}
                     height={250}
-                    className="md:w-1/2 h-48 object-cover rounded-md mt-4 md:mt-0 md:ml-4"
+                    className="md:w-1/2 h-48 object-cover rounded-md md:pl-6 mt-4 md:mt-0"
                   />
                 )}
               </div>

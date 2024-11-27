@@ -29,8 +29,8 @@ export default function Index() {
         <>
             <Navbar />
             <HeroOne />
-            <AboutUs />
             <Feed/>
+            <AboutUs />
             <Footer />
             <Switcher />
         </>
