@@ -27,7 +27,7 @@ const posts = [
     title: "My Eden",
     date: "2024-09-04",
     image: "/images/tracks/2024-10-03-Eden.jpg",
-    imagePosition: "right", // left or right
+    imagePosition: "left", // left or right
     audio: "/audio/2024-10-03-Eden.mpeg",
     content: `
   Queridines,
