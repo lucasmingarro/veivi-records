@@ -6,7 +6,9 @@
    Created: March 2022
    File: Main Css File
 */
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
 /*

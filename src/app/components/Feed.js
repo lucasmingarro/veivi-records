@@ -55,14 +55,17 @@ export default function Feed() {
                 key={index}
                 className="p-6 border rounded-lg shadow-md bg-white dark:bg-slate-900 dark:border-gray-800 transition-colors flex flex-col md:flex-row items-start md:items-start md:gap-6 gap-4"
               >
+
                 {post.image && post.imagePosition === "left" && (
+                   <div className="relative w-full md:w-auto sd:w-auto flex-shrink-0">
                   <Image
                     src={post.image}
                     alt={post.title}
                     width={400}
                     height={250}
-                    className="md:w-1/4 h-48 object-cover rounded-md md:pr-6 mb-4 md:mb-0"
+                    className="max-w-[400px] max-h-[350px] object-contain rounded-md"
                   />
+                  </div>
                 )}
                 <div className="flex-1">
                   {/* Título y Fecha */}
@@ -91,13 +94,15 @@ export default function Feed() {
                   )}
                 </div>
                 {post.image && post.imagePosition === "right" && (
+                  <div className="relative w-full md:w-auto sd:w-auto flex-shrink-0">
                   <Image
                     src={post.image}
                     alt={post.title}
                     width={400}
                     height={250}
-                    className="md:w-1/2 h-48 object-cover rounded-md md:pl-6 mt-4 md:mt-0"
+                    className="max-w-[400px]  object-contain rounded-md"
                   />
+                  </div>
                 )}
               </div>
             ))}
