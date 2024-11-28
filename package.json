@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
     "@aws-amplify/cli": "^12.13.1",
@@ -15,8 +14,6 @@
     "autoprefixer": "^10.4.20",
     "aws-amplify": "^6.10.0",
     "debug": "^4.3.7",
-    "eslint": "^9.15.0",
-    "eslint-config-next": "^15.0.3",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "next": "^14.2.18",
