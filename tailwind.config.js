@@ -1,7 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: "jit",
-  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./pages/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+    "./public/**/*.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   darkMode: "class",
   important: true,
   theme: {
@@ -46,8 +52,9 @@ module.exports = {
       },
 
       spacing: {
-        0.75: "0.1875rem",
-        3.25: "0.8125rem",
+        3: "3px",
+        13: "13px",
+        30: "30px",
       },
 
       maxWidth: ({ theme, breakpoints }) => ({

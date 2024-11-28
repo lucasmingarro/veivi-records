@@ -13,8 +13,8 @@ const posts = [
   {
     title: "Here comes Polly Jean",
     date: "2024-10-03",
-    image: "/images/tracks/2024-10-03-PollyJean.webp",
-    imagePosition: "left", // left or right
+    // image: "/images/tracks/2024-10-03-PollyJean.webp",
+    // imagePosition: "left", // left or right
     audio: "/audio/2024-10-03-PollyJean.mpeg",
     content: `
     Queridines,
