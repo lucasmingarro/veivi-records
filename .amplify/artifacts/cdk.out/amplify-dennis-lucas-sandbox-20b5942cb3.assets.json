@@ -1,0 +1,19 @@
+{
+  "version": "38.0.1",
+  "files": {
+    "a90c39f532a283089af2143aa3f02773b93c38e0aa17cd27e8a2da2b4210af4d": {
+      "source": {
+        "path": "amplify-dennis-lucas-sandbox-20b5942cb3.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "a90c39f532a283089af2143aa3f02773b93c38e0aa17cd27e8a2da2b4210af4d.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

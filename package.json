@@ -10,8 +10,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-amplify/cli": "^12.13.1",
     "@iconscout/react-unicons": "^2.0.2",
     "autoprefixer": "^10.4.20",
+    "aws-cdk-lib": "^2.171.1",
+    "constructs": "^10.4.2",
     "debug": "^4.3.7",
     "eslint": "^9.15.0",
     "eslint-config-next": "^15.0.3",
@@ -36,5 +39,10 @@
     "tailwindcss": "^3.4.15",
     "tiny-slider": "^2.9.4",
     "tiny-slider-react": "^0.5.7"
+  },
+  "devDependencies": {
+    "@aws-amplify/backend": "^1.8.0",
+    "@aws-amplify/backend-cli": "^1.4.2",
+    "typescript": "^5.7.2"
   }
 }
