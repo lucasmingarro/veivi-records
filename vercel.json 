@@ -1,9 +1,3 @@
 {
-  "framework": "nextjs",
-  "outputDirectory": "build"
-  "build": {
-    "env": {
-      "NODE_OPTIONS": "--force --legacy-peer-deps"
-    }
-  }
+  "buildCommand": "next build"
 }
