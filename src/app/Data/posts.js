@@ -174,6 +174,45 @@ Saludos,
 Veivi Récords`,
   },
 
+  {
+    title: "from the haze..",
+    date: "2021-04-28",
+    // image: "/images/tracks/2021-04-28.jpeg",
+    // imagePosition: "right", // left or right
+    audio: "/audio/2021-04-28.mpeg",
+    content: `
+Queridines,
+Muy buenas noches!
+Saludos,
+Veivi Récords.`,
+  },
+
+  {
+    title: "",
+    date: "2020-11-24",
+    image: "/images/tracks/2020-11-24.jpeg",
+    imagePosition: "right", // left or right
+    audio: "/audio/2020-11-24.mpeg",
+    content: `
+Queridines,
+Muy buenas tardes,
+Saludos,
+Veivi récords`,
+  },
+
+  {
+    title: "",
+    date: "2020-11-07",
+    image: "/images/tracks/2020-11-07.jpeg",
+    imagePosition: "left", // left or right
+    audio: "/audio/2020-11-07.mpeg",
+    content: `
+Queridines,
+Muy buen sábado.
+Saludos,
+Veivi récords`,
+  },
+
 
   {
     title: "Desenamorarse",
