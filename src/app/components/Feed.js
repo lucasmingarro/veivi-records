@@ -63,11 +63,11 @@ export default function Feed() {
                     alt={post.title}
                     width={400}
                     height={250}
-                    className="max-w-[400px] max-h-[350px] object-contain rounded-md"
+                    className="w-full max-w-[400px] object-contain rounded-md"
                   />
                   </div>
                 )}
-                <div className="flex-1">
+                <div className="w-full flex-1">
                   {/* Título y Fecha */}
                   <div>
                     <h3 className="text-xl font-semibold mb-1 text-dark dark:text-white transition-colors">
@@ -100,7 +100,7 @@ export default function Feed() {
                     alt={post.title}
                     width={400}
                     height={250}
-                    className="max-w-[400px]  object-contain rounded-md"
+                    className="w-full max-w-[400px]  object-contain rounded-md"
                   />
                   </div>
                 )}
