@@ -32,8 +32,11 @@ export default function AboutUs() {
                         <div className="lg:ms-5">
                             <h3 className="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">What’s This All About?</h3>
 
-                            <p className="text-slate-400 max-w-xl text-[15px]">Hey there! This is a cozy little archive of cool stuff Guille shares on his WhatsApp list. From music to texts, to images that vibe just right, it’s all about capturing those moments of creativity and connection. Dive in, explore, and enjoy the mix—there’s always something here to spark a feeling or two.</p>
-                            <p className="text-slate-400 max-w-xl text-[15px]">Saludos, Veivi Récords</p>
+                            <p className="text-slate-400 max-w-xl text-[15px]">Welcome to this little corner where we’re breaking the circle. Guille shares all this—music, texts, images, and more—with his friends on WhatsApp. It’s meant just for them, but here, we’re archiving it all. This page is simply a way to keep those creative sparks alive and accessible.
+
+Take a dive, explore the vibes, and enjoy this collection of moments that were once shared among friends.</p>
+                            <p className="text-slate-400 max-w-xl text-[15px]">Saludos,
+                                 Veivi Récords</p>
 
                             <div className="mt-6">
                                 <Link href="#project" className="btn bg-amber-500/10 hover:bg-amber-500 border-amber-500/10 hover:border-amber-500 text-amber-500 hover:text-white rounded-md me-2 mt-2">Feed</Link>

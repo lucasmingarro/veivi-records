@@ -25,7 +25,7 @@ const posts = [
   },
   {
     title: "My Eden",
-    date: "2024-09-04",
+    date: "2024-08-27",
     image: "/images/tracks/2024-10-03-Eden.jpg",
     imagePosition: "left", // left or right
     audio: "/audio/2024-10-03-Eden.mpeg",
@@ -36,6 +36,73 @@ const posts = [
   Saludos,
   Veivi Récords`,
   },
+
+  {
+    title: "Ilusión",
+    date: "2024-08-27",
+    image: "/images/tracks/2024-08-27.jpeg",
+    imagePosition: "right", // left or right
+    audio: "/audio/2024-08-27.mpeg",
+    content: `
+    Muy buenas noches,
+    Saludos,
+    Veivi Récords`,
+  },
+
+  {
+    title: "Such a Shame",
+    date: "2024-08-09",
+    image: "/images/tracks/2024-08-09.jpeg",
+    imagePosition: "left", // left or right
+    audio: "/audio/2024-08-09.mpeg",
+    content: `
+Muy buenas noches!
+Saludos,
+Veivi Récord`,
+  },
+
+  {
+    title: "Just a little rain....fclti",
+    date: "2024-07-19",
+    // image: "/images/tracks/2024-08-09.jpeg",
+    // imagePosition: "left", // left or right
+    audio: "/audio/2024-07-19.mpeg",
+    content: `
+Queridines,
+Muy buenas noches.
+Saludos,
+Veivi Récords`,
+  },
+
+
+  {
+    title: "Praça da Sé",
+    date: "2024-06-15",
+    image: "/images/tracks/2024-06-15.jpeg",
+    imagePosition: "right", // left or right
+    audio: "/audio/2024-06-15.mpeg",
+    content: `
+Queridines,
+Caminan unos elefantes escuchando synchronicity,
+se encuentran con fripp en praça da se, discuten acerca del mejor disco de Pink Floyd...y resulta esto.
+Buenas noches,
+Saludos,
+Veivi Récords`,
+  },
+
+  {
+    title: "Shine",
+    date: "2024-06-07",
+    // image: "/images/tracks/2024-06-15.jpeg",
+    // imagePosition: "right", // left or right
+    audio: "/audio/2024-06-07.mpeg",
+    content: `
+Queridines,
+Por las noches, siempre vuelve...
+Veivi Récords,
+Saludos`,
+  },
+
   {
     title: "🍷",
     date: "2024-05-01",
