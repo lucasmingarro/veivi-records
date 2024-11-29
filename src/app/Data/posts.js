@@ -104,6 +104,21 @@ Saludos`,
   },
 
   {
+    title: "This Visions",
+    date: "2024-05-17",
+    // image: "/images/tracks/2024-06-15.jpeg",
+    // imagePosition: "right", // left or right
+    audio: "/audio/2024-05-17.mpeg",
+    content: `
+Muy buenas noches,
+
+...all that remains..
+
+Saludos,
+Veivi Récords`,
+  },
+
+  {
     title: "🍷",
     date: "2024-05-01",
     image: "/images/tracks/2024-05-01.jpeg",
@@ -117,6 +132,18 @@ Your bare feet on the cold floor as you climb out of bed and walk to the window.
 Speak now before it is too late, and then hope to go on speaking until there is nothing more to be said. Time is running out, after all. Perhaps it is just as well to put aside your stories for now and try to examine what it has felt like to live inside this body from the first day you can remember being alive until this one. A catalogue of sensory data. What one might call a phenomenology of breathing.
   Saludos,
   Veivi Récords`,
+  },
+
+  {
+    title: "Feliz Navidad",
+    date: "2023-12-25",
+    image: "/images/tracks/2023-12-25.jpeg",
+    imagePosition: "left", // left or right
+    audio: "/audio/2023-12-25.mpeg",
+    content: `
+Muy buenas noches!
+Saludos,
+Veivi Récord`,
   },
 
 
