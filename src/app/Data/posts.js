@@ -174,6 +174,71 @@ Saludos,
 Veivi Récords`,
   },
 
+  {
+    title: "Extraños en la Noche",
+    date: "2022-10-13",
+    // image: "/images/tracks/2022-10-13.jpeg",
+    // imagePosition: "right", // left or right
+    audio: "/audio/2022-10-08.mp3",
+    content: `
+The song of the lone wolf, the outsider, the alien, the foreigner, and night owl who’s wheeling and dealing, putting everything up for sale and surrendering his self-interest. On the move aimlessly through the dingy darkness — slicing up the pie of sentimental feelings, dividing it into pieces all the time, exchanging piercing penetrating looks with someone he hardly knows.
+
+Tramps and mavericks, the object of each other’s affection, enraptured with each other and creating an alliance — ignoring all the ages of man, the golden age, electronic age, age of anxiety, the jazz age. You’re here to tell a different story, a bird of another feather. You’ve got a tough persona, like a side of beef, and you’re aroused and stimulated, with an ear-to-ear grin, like a Cheshire cat, and you’re rethinking your entire formless life, your entire being is filled with a whiff of this heady ambrosia. Something in your vital spirit, your pulse, something that runs in the blood, tells you that you must have this tender feeling of love now and forever, this essence of devoted love held tightly in your grip — that it’s essential and necessary for staying alive and cheating death.
+
+Intruders, oddballs, kooks, and villains, in this gloomy lifeless dark, fight for space. Two rootless alienated people, withdrawn and isolated, opened the door to each other, said Aloha, Howdy, How you doing, and Good Evening. How could you have known that the smooching and petting, eros and adoration was just one break down mambo hustle away — one far sided google eyed look and a lusty leer — that ever since then, that moment of truth, you’ve been steamed up, head over heels, each other’s hearts’ desire. Sweethearts and honeys right from the beginning. Right from the inaugural sidelong sneak peek, the origin — the starting point. Now you’re yoked together, one flesh in perpetuity — into the vast eternity — immortalized.
+Saludos,
+Veivi Récords`,
+  },
+
+  {
+    title: "",
+    date: "2022-10-08",
+    image: "/images/tracks/2022-10-08.jpeg",
+    imagePosition: "left", // left or right
+    audio: "/audio/2022-10-08.mpeg",
+    content: `
+Saludos,
+Veivi Récords`,
+  },
+
+  {
+    title: "",
+    date: "2022-10-04",
+    image: "/images/tracks/2022-10-04.jpeg",
+    imagePosition: "right", // left or right
+    audio: "/audio/2022-10-04.mpeg",
+    content: `
+Muy buenas noches,
+Saludos,
+Veivi Récords`,
+  },
+
+  {
+    title: "Veivi special",
+    date: "2022-09-27",
+    image: "/images/tracks/2022-09-27.jpeg",
+    imagePosition: "left", // left or right
+    audio: "/audio/2022-09-27.mpeg",
+    content: `
+Un veivi special,
+"And I shall sleep a pleasant sleep
+While storms above their vigils keep"
+Saludos,
+Veivi Récords`,
+  },
+
+
+  {
+    title: "DEVI/ATION",
+    date: "2022-09-25",
+    image: "/images/tracks/2022-09-25.jpeg",
+    imagePosition: "right", // left or right
+    audio: "/audio/2022-09-25.mpeg",
+    content: `
+Muy buenas noches,
+Saludos,
+Veivi Récords`,
+  },
 
   {
     title: "",
@@ -184,6 +249,19 @@ Veivi Récords`,
     content: `
 Queridines,
 Desde el sol los saluda
+Veivi Récords`,
+  },
+
+  {
+    title: "",
+    date: "2022-07-16",
+    image: "/images/tracks/2022-07-16.jpeg",
+    imagePosition: "right", // left or right
+    audio: "/audio/2022-07-16.mpeg",
+    content: `
+Queridines,
+Muy buenas tardes.
+Saludos,
 Veivi Récords`,
   },
 
@@ -346,52 +424,33 @@ Veivi récords`,
     content: `
 Sheena Baby, de la que estaba enamorado, y yo íbamos caminando. Era de noche, muy tarde. Las nubes habían tomado la forma de grandes hongos y esponjas, y la noche era hermosa como ninguna, con la excepción de que se nos habían pinchado dos ruedas del coche unos cuantos kilómetros atrás y no teníamos ni idea de dónde estábamos ni a quién pedirle ayuda. Aparte de esta emergencia puntual, era evidente que algo no marchaba bien. Habíamos llegado al extremo de querer matarnos el uno al otro, un tema del que ya he hablado en otra ocasión.
 
-
-
 Sheena Baby era todo amor, una verdadera gatita. La había querido durante años, desde que me deshice de Miss Sheila, y me sentía como si se me hubiera arrebatado parte de mí mismo. Sheena Baby no estaba tan colada por mí como yo lo estaba por ella. Eso era innegable. Había pensado pegarle un tiro a ella y después pegarme otro a mí, lo cual no nos habría reportado beneficio alguno a ninguno de los dos. Todo se resumiría en una breve noticia de periódico que unos extraños leerían y lamentarían para después pasar a la sección delos deportes. El amor se tuerce. Pasa a diario. No tienes que matarte por amor si es algo que puedes evitar, aunque a veces resulta difícil no hacerlo.
 
+Si no hubiéramos pinchado podríamos habernos metido por el bosque, poner algo de Thin Lizzy, le habría dicho que aún estábamos a tiempo de arreglar las cosas. Que no era sólo que ella fuese mi amor, sino que era el amor de mi vida. Después, en la oscuridad, podríamos habernos dado un buen achuchón. Pero no me quería, al fin me había dado cuenta, así que decidí ser un verdadero cabrón con ella.
 
+   — Lo que te pasa es que no sabes escuchar a nadie — le dije.
 
-Si no hubiéramos pinchado podríamos habernos metido por el bosque, poner algo de Thin Lizzy, le habría dicho que aún estábamos a tiempo de arreglar las cosas. Que no era sólo que ella fuese mi amor, sino que era el amor de mi vida. Después, en la oscuridad, podríamos habernos dado un buen achuchón. Pero no me quería, al fin me había dado cuenta, así que decidí ser un verdadero cabrón con ella. 
+   — No, lo que pasa es que estoy hasta el coño de oírte — dijo ella.
 
-   — Lo que te pasa es que no sabes escuchar a nadie — le dije. 
+   — Que te den — dije.
 
-   — No, lo que pasa es que estoy hasta el coño de oírte — dijo ella. 
+   — Bésame el culo — dijo.
 
-   — Que te den — dije. 
-
-   — Bésame el culo — dijo. 
-
-  — Pues bájate los pantalones — dije, a ver si colaba, pero no fue así y nos pusimos a caminar en direcciones opuestas.
-
-
+  — Pues bájate los pantalones — dije, a ver si colaba, pero no fue así y nos pusimos a caminar en direcciones opuestas.
 
 No me explicaba cómo era posible que algo que había empezado tan bien tuviese que acabar así de mal.La palabra amor es mucha palabra y cubre un territorio inmenso. Te puedes pasar la vida entera persiguiéndolo y acabar sin nada, siendo un viejo desdentado de nariz grande y con pelos en las orejas, todo el día amargado en el bar al acecho de alguien de tu edad, pero con probabilidades de éxito cada vez menores. Llegada cierta edad ya se han acumulado demasiados goles en tu contra.
 
-
-
-No sabía qué hacer, ni adonde ir. Nos hallábamos a cientos de kilómetros de cualquier ciudad, de alguien que pudiera echarnos una mano con el equipo adecuado para arreglar un pinchazo o que llamase a una grúa para remolcarnos. Ya me veía caminando días enteros, durmiendo en la cuneta. Sin duda el primer tío que pasara la recogería a ella, pero no tenía tan claro que la primera mujer que pasara me recogiera a mí. Me volví para verla. Con cada paso que daba, Sheena Baby se iba haciendo más pequeña en la distancia, aunque aún podía distinguir aquel magnífico culo suyo bamboleándose. Seguro que lo bambolearía más en cuanto oyese que alguien pasaba por allí. Ni siquiera tendría que hacer dedo, con otras partes del cuerpo le bastaba para llamar la atención, pero me costaba hacerme a la idea de no volver a verla. Había encontrado al fin a la mujer de mi vida, y ahora ella ya no quería saber nada de mí. Me lo había buscado yo solo, por haberme quedado levantado hasta las tantas escuchando Grandes éxitos musicales y friendo patatas a las dos de la mañana, por haber amontonado las bolsas de basura en el armario escobero, por haber dejado que me crecieran las uñas de los pies y rasparle las piernas por la noche en la cama. Da la impresión de que al principio de una relación todo marcha a las mil maravillas, pero enseguida acabas conociendo al otro.Entonces descubres que, a pesar de su aparente belleza externa, tiene una verruga asquerosa en el culo, o que ha nacido con seis dedos en los pies y le han cortado uno, lo cual te hace pensar en cuestiones de herencia y descendencia. Te despiertas por la mañana antes que ella, te acercas y le hueles el aliento y entonces sueltas un «Me cago en la puta, ¿se puede saber qué carajo comiste anoche?». Cosas así rompen el encanto, y la opinión que te has hecho de alguien cambia cuando la conoces en profundidad después de haber vivido juntos, cuando la ves por la mañana y te fijas en que en la parte de atrás de los muslos tiene pequeñas vetas de grasa.
-
-
+No sabía qué hacer, ni adonde ir. Nos hallábamos a cientos de kilómetros de cualquier ciudad, de alguien que pudiera echarnos una mano con el equipo adecuado para arreglar un pinchazo o que llamase a una grúa para remolcarnos. Ya me veía caminando días enteros, durmiendo en la cuneta. Sin duda el primer tío que pasara la recogería a ella, pero no tenía tan claro que la primera mujer que pasara me recogiera a mí. Me volví para verla. Con cada paso que daba, Sheena Baby se iba haciendo más pequeña en la distancia, aunque aún podía distinguir aquel magnífico culo suyo bamboleándose. Seguro que lo bambolearía más en cuanto oyese que alguien pasaba por allí. Ni siquiera tendría que hacer dedo, con otras partes del cuerpo le bastaba para llamar la atención, pero me costaba hacerme a la idea de no volver a verla. Había encontrado al fin a la mujer de mi vida, y ahora ella ya no quería saber nada de mí. Me lo había buscado yo solo, por haberme quedado levantado hasta las tantas escuchando Grandes éxitos musicales y friendo patatas a las dos de la mañana, por haber amontonado las bolsas de basura en el armario escobero, por haber dejado que me crecieran las uñas de los pies y rasparle las piernas por la noche en la cama. Da la impresión de que al principio de una relación todo marcha a las mil maravillas, pero enseguida acabas conociendo al otro.Entonces descubres que, a pesar de su aparente belleza externa, tiene una verruga asquerosa en el culo, o que ha nacido con seis dedos en los pies y le han cortado uno, lo cual te hace pensar en cuestiones de herencia y descendencia. Te despiertas por la mañana antes que ella, te acercas y le hueles el aliento y entonces sueltas un «Me cago en la puta, ¿se puede saber qué carajo comiste anoche?». Cosas así rompen el encanto, y la opinión que te has hecho de alguien cambia cuando la conoces en profundidad después de haber vivido juntos, cuando la ves por la mañana y te fijas en que en la parte de atrás de los muslos tiene pequeñas vetas de grasa.
 
 Aun así, quería salir corriendo en su busca, porque la quería tal cual era y porque nadie es perfecto, especialmente yo; pero en el instante en que una persona es consciente de que alguien está perdidamente enamorado de ella, ésta automáticamente pierde el interés y se distancia, ya que el ansia que uno siente por el otro es rara vez compartida en igual medida por los dos. Aquello me entristecía y me descolocaba, pero tenía que encontrar una solución, pues ella estaba desandando el camino por el que habíamos llegado, si fuera preciso incluso de vuelta a Oxford, o eso parecía, y lo que yo necesitaba era que me montaran deprisa dos ruedas sin cámara, o al menos que les pusieran un parche a las pinchadas, y necesitaba un gato y una llave inglesa de cuatro brazos, pero no tenía nada de nada. Habíamos salido sin ninguna herramienta, ya que el plan era sólo acercarse hasta la licorería. Después compramos unas Budweiser y desde ese momento las cosas empezaron a ir de mal en peor. Nos fuimos a dar una vuelta. Pensé: «A tomar vientos», decidí que cortar el césped podía esperar hasta más tarde. Los planes minúsculos e insignificantes de los ratones y los hombres.
 
-
-
 Nos peleamos, por algo que ya se venía cociendo desde tiempo atrás, por una chavala con la que había estado hablando en un bar hacía unas noches, alguien que se había interesado por mi trabajo. Ya se lo había advertido, que se trataba de algo inevitable, y de hecho hubo un tiempo que parecía haberlo entendido.Incluso estuvo soportando las llamadas durante un tiempo, las de aquellas mujeres que llamaban por teléfono a cualquier hora del día o de la noche.
-
-
 
 Pero llegó un momento en que empezó a decir: «Otra llamada para ti». Me pasaba el teléfono mientras sonreía con los labios apretados y acercaba una silla para observarme. Yo me encorvaba sobre el teléfono yen voz baja preguntaba quién era con la boca pegada al micrófono. Ella se quedaba a mi lado para escuchar toda la conversación. Luego llegó el día en que me pidió que nos cambiasen el número de teléfono. Yo me negué. Ella quería que lo quitaran del listín. Yo protesté. La gente tenía que ponerse en contacto con migo para consultarme los detalles, para pedir presupuestos, le dije. También tienen que ponerse en contacto contigo para otros asuntos, o eso parece, dijo ella. La cosa fue a peor. Empezaron las peleas. Si queríamos hacer el amor, antes teníamos que hacer las paces, y eso es matador. Acabó con lo que sentíamos uno por el otro, y una vez que te empieza a corroer por dentro te conviertes en el candidato perfecto para terminar persiguiendo a alguien por la carretera, igual que me estaba sucediendo a mí aquella noche.
 
-
-
 Ella no paraba de caminar y yo decidí dar la vuelta y seguirla. Intentaba acercarme lo suficiente como para que me oyera llamarla. Seguro que iba a parecerle un completo idiota, cuanto más lo pensaba más claro lo veía, además de que era muy posible que me ignorase, que siguiera caminando, como si nada.
 
-
-
 Me recordaba a aquella vez en que había visitado el Zoo de Memphis, hacía años, antes de que me llegase la pubertad. Iba caminando y llevaba un globo atado a un palito en una mano y un algodón dulce en la otra. Mientras deambulaba por ahí me acerqué al foso de los osos, donde se había congregado mucha gente que los miraba. Eran unos osos enormes, no sé si pardos o qué. Allí estaba sucediendo algo, eso estaba claro. Los osos estaban abajo, en un gran foso lleno de rocas, con una charca artificial y una cueva artificial, viviendo una vida artificial. La gente apuntaba al foso y todos sonreían. Yo me abrí camino entre la multitud para ver qué pasaba. Algunos padres tenían a sus hijos encaramados al cuello y los sujetaban por las piernas. Había dos osos allá abajo en el foso, dos bolas peludas y enormes. Uno de ellos estaba de pie y el otro estaba tumbado sobre la espalda con las garras en el aire, moviendo la cabeza y mirando a la gente. Parecía como si estuviera un poco borracho. Miré a los osos, miré a la gente y después volví a mirar a los osos. El que estaba de pie metió la nariz entre las piernas del que estaba tumbado sobre la espalda y aspiró con fuerza. El oso tumbado sobre la espalda levantó la cabeza, puso los labios en forma de O haciendo un túnel con la boca y gruñó «¡ROOOOOOOOOOOOOO!» a todo volumen. El oso que estaba de pie giró el cuello, cargó su peso alternativamente en cada pie, volvió a meter la nariz entre las piernas del otro oso y, mientras el oso que estaba tumbado agitaba las garras delanteras y gruñía «¡OOOOROOOOOOO! ¡MOOROOOOOOO! ¡GROOOOOOOO!», aspiró con fuerza.
-
 
 La gente sonreía y apuntaba, mientras el oso que estaba de pie meneaba la nariz, volvía a meterla entre las piernas del otro oso y de nuevo aspiraba con fuerza. El oso tumbado cerró los ojos, agitó la cabeza y gruñó «¡BROOOOOOOOOOOOOOOO!». Después se levantó y lamió un poco al otro oso, ambos lo hicieron, y entonces lentamente se giraron juntos, se metieron en la cueva y desaparecieron. La multitud seguía mirando. Yo también. Pero los osos no salían. Sentía, aun ya entonces, hace tantos años, que algo extraño y misterioso estaba sucediendo, algo que no se nos iba a permitir observar. Después de un rato la multitud se empezó a dispersar de uno en uno y de dos en dos, después de tres en tres y de cuatro en cuatro, hasta que fui yo el único que quedaba allí. Seguía con la vista fija en la oscura entrada de la cueva, pero ya no había nada más que ver excepto el aire negro en su interior y unas formas imprecisas que se movían allí
 adentro. Después de un rato yo también me fui y los dejé a sus anchas.
@@ -417,7 +476,7 @@ Army Archard seguía poniendo los grandes éxitos de 1967. Yo seguía bebiendo l
 
 Jamás. Volvería. A abrazarme.
 
-Pegué un frenazo justo a su lado. Ella dejó de andar y se volvió para mirarme. Estuvimos mirándonos uno al otro durante casi un minuto. Pude haberle dicho un montón de cosas, pude haberle prometido el oro y el moro aunque después no lo hubiera cumplido, lo que fuera con tal de que subiera de nuevo al coche. Pero todo lo que le dije fue: 
+Pegué un frenazo justo a su lado. Ella dejó de andar y se volvió para mirarme. Estuvimos mirándonos uno al otro durante casi un minuto. Pude haberle dicho un montón de cosas, pude haberle prometido el oro y el moro aunque después no lo hubiera cumplido, lo que fuera con tal de que subiera de nuevo al coche. Pero todo lo que le dije fue:
 
 —¿Quieres que te lleve?
 

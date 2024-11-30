@@ -41,7 +41,7 @@ export default function Feed() {
 
   return (
     <section className="relative md:py-24 py-16" id="feed">
-      <div className="container">
+      <div className="container mx-auto px-4 max-w-screen-lg">
         <h2 className="text-2xl font-bold mb-6 text-center text-dark dark:text-white transition-colors">
           Veivi Music Feed
         </h2>
@@ -59,6 +59,10 @@ export default function Feed() {
               That&apos;s all folks!
             </p>
           }
+          style={{
+            overflow: "hidden", // Asegura que no cause desbordamiento horizontal
+            maxWidth: "100%", // Limita el ancho
+          }}
         >
           <div className="grid gap-8">
             {visiblePosts.map((post) => {
@@ -106,14 +110,24 @@ export default function Feed() {
                       <div>
                         <p
                           className="text-gray-600 dark:text-gray-300 transition-colors mb-2"
-                          style={{ whiteSpace: "pre-wrap" }}
+                          style={{
+                            whiteSpace: "pre-wrap",
+                            wordWrap: "break-word",
+                            overflowWrap: "break-word",
+                          }}
                         >
                           {contentToDisplay}
                         </p>
                         {post.content.length > MAX_CHARACTERS && (
                           <button
                             onClick={() => toggleContent(post.id)}
-                            className="text-blue-500 dark:text-blue-400 hover:underline text-sm"
+                            className="w-full text-blue-500 dark:text-blue-400 hover:underline text-sm"
+                            style={{
+                              display: "block",
+                              textAlign: "center",
+                              maxWidth: "100%",
+                              overflowWrap: "break-word",
+                            }}
                           >
                             {isExpanded ? "Read Less" : "Read More"}
                           </button>
