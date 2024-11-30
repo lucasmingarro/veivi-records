@@ -120,6 +120,25 @@ export default function Feed() {
                         )}
                       </div>
                     )}
+                    {/* Archivos adjuntos */}
+                    {post.attachments && post.attachments.length > 0 && (
+                      <div className="mt-4">
+                        <ul className="list-disc pl-5">
+                          {post.attachments.map((attachment, index) => (
+                            <li key={index}>
+                              <a
+                                href={attachment.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-500 hover:underline"
+                              >
+                                {attachment.text}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                   {post.image && post.imagePosition === "right" && (
                     <div className="relative w-full md:w-auto sd:w-auto flex-shrink-0">

@@ -175,6 +175,102 @@ Veivi Récords`,
   },
 
   {
+    title: "Dos Cosas",
+    date: "2022-06-10",
+    // image: "/images/tracks/2022-01-07.jpeg",
+    // imagePosition: "left", // left or right
+    audio: "/audio/2022-06-10.mpeg",
+    attachments: [
+      // { url: "/attachments/documento.pdf", text: "Ver documento PDF" },
+      { url: "https://archive.org/details/aboutlooking00berg/mode/2up", text: "About looking by Berger, John" }
+    ],
+    content: `
+Queridines,
+Reaparecieron dos cosas.
+Lindas tardes,
+Saludos,
+Veivi Récords`,
+  },
+
+
+  {
+    title: "",
+    date: "2022-06-06",
+    image: "/images/tracks/2022-06-06.jpeg",
+    imagePosition: "right", // left or right
+    audio: "/audio/2022-06-06.mpeg",
+    content: `
+Muy buenas noches,
+Saludos,
+Veivi Récords`,
+  },
+
+  {
+    title: "Rita",
+    date: "2022-05-25",
+    image: "/images/tracks/2022-05-25.jpeg",
+    imagePosition: "left", // left or right
+    audio: "/audio/2022-05-25.mpeg",
+    content: `
+Siempre la noche,
+Saludos,
+Veivi Récords
+
+Between Rita and my eyes there is a rifle
+And whoever knows Rita kneels
+and prays
+To the divinity in those honey-colored eyes
+And I kissed Rita
+When she was young
+And I remember how she approached
+And how my arm covered the loveliest of braids
+And I remember Rita
+The way a sparrow remembers its stream
+
+Ah, Rita
+
+Between us there are a million sparrows and images
+And many a rendezvous
+Fired at by a rifle
+Rita's name was a feast in my mouth
+Rita's body was a wedding in my blood
+And I was lost in Rita for two years
+And for two years she slept on my arm
+And we made promises
+Over the most beautiful of cups
+And we burned in the wine of our lips
+And we were born again
+
+Ah, Rita!
+
+What before this rifle could have turned my eyes from yours
+Except a nap or two or honey-colored clouds?
+Once upon a time
+Oh, the silence of dusk
+In the morning my moon migrated to a far place
+Towards those honey-colored eyes
+
+And the city swept away all the singers
+And Rita
+Between Rita and my eyes — A rifle
+
+- Mahmoud Darwish`,
+  },
+
+  {
+    title: "2022 🍸",
+    date: "2022-01-07",
+    image: "/images/tracks/2022-01-07.jpeg",
+    imagePosition: "left", // left or right
+    audio: "/audio/2022-01-07.mpeg",
+    content: `
+Queridines,
+Muy feliz 2022.
+Saludos,
+Veivi Récords.`,
+  },
+
+  {
     title: "from the haze..",
     date: "2021-04-28",
     // image: "/images/tracks/2021-04-28.jpeg",
