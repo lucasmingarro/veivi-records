@@ -39,17 +39,18 @@ export default function HeroOne(){
                     <div className="relative">
                         <Image height={0} width={0} sizes="100vw" style={{height:"auto", width:"100%"}}  src="/images/hero/casette2.png" alt=""/>
 
-                        <div className="absolute lg:bottom-40 md:bottom-10 bottom-2 ltr:md:-left-5 ltr:left-2 rtl:md:-right-5 rtl:right-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">
+                        {/* <div className="absolute lg:bottom-40 md:bottom-10 bottom-2 ltr:md:-left-5 ltr:left-2 rtl:md:-right-5 rtl:right-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">
                             <span className="text-3xl font-medium mb-0"><span className="counter-value font-bold" data-target="125"> <CountUp
                                             start={7}
                                             className="counter-value"
                                             end={100}
                                             duration={2.75} /></span>+</span>
                             <h6 className="text-sm text-slate-400 mt-1">Posts</h6>
-                        </div>
+                        </div> */}
 
-                        <div className="absolute lg:top-40 md:top-56 top-48 ltr:md:-right-0 ltr:right-2 rtl:md:-left-0 rtl:left-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">
-                            <h6 className="font-semibold">No Spotify</h6>
+                        {/* <div className="absolute lg:top-40 md:top-56 top-48 ltr:md:-right-0 ltr:right-2 rtl:md:-left-0 rtl:left-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center"> */}
+                        <div className="absolute lg:bottom-40 md:bottom-10 bottom-2 ltr:md:-left-5 ltr:left-2 rtl:md:-right-5 rtl:right-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">
+                            <h6 className="font-semibold">NO SPOTIFY</h6>
                             <h6 className="text-sm text-slate-400 mt-1">Links</h6>
                         </div>
                     </div>

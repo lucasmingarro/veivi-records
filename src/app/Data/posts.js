@@ -174,6 +174,33 @@ Saludos,
 Veivi Récords`,
   },
 
+
+  {
+    title: "",
+    date: "2022-07-21",
+    image: "/images/tracks/2022-07-21.jpeg",
+    imagePosition: "left", // left or right
+    audio: "/audio/2022-07-21.mpeg",
+    content: `
+Queridines,
+Desde el sol los saluda
+Veivi Récords`,
+  },
+
+  {
+    title: "Lado B",
+    date: "2022-07-03",
+    // image: "/images/tracks/2022-07-21.jpeg",
+    // imagePosition: "left", // left or right
+    audio: "/audio/2022-07-03.mpeg",
+    content: `
+Queridines,
+Muy buenas noches.
+Saludos,
+Ringo y el lado b de Veivi Récords`,
+  },
+
+
   {
     title: "Dos Cosas",
     date: "2022-06-10",
@@ -181,7 +208,7 @@ Veivi Récords`,
     // imagePosition: "left", // left or right
     audio: "/audio/2022-06-10.mpeg",
     attachments: [
-      // { url: "/attachments/documento.pdf", text: "Ver documento PDF" },
+      // { url: "/attachments/file.pdf", text: "Text del link" },
       { url: "https://archive.org/details/aboutlooking00berg/mode/2up", text: "About looking by Berger, John" }
     ],
     content: `
@@ -261,7 +288,7 @@ Between Rita and my eyes — A rifle
     title: "2022 🍸",
     date: "2022-01-07",
     image: "/images/tracks/2022-01-07.jpeg",
-    imagePosition: "left", // left or right
+    imagePosition: "right", // left or right
     audio: "/audio/2022-01-07.mpeg",
     content: `
 Queridines,

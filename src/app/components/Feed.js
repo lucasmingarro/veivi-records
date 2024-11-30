@@ -120,7 +120,7 @@ export default function Feed() {
                         )}
                       </div>
                     )}
-                    {/* Archivos adjuntos */}
+                    {/* Attachments */}
                     {post.attachments && post.attachments.length > 0 && (
                       <div className="mt-4">
                         <ul className="list-disc pl-5">
