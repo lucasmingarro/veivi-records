@@ -94,7 +94,7 @@ export default function Feed() {
                         {post.title}
                       </h3>
                       <p className="text-gray-500 text-sm mb-4 dark:text-gray-400 transition-colors">
-                        {new Date(post.date).toLocaleDateString('es-AR')}
+                        {new Date(new Date(post.date).setHours(new Date(post.date).getHours() + 3)).toLocaleDateString('es-AR')}
                       </p>
                     </div>
                     {/* Reproductor de Audio */}

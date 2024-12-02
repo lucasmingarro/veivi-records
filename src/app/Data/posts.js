@@ -175,6 +175,33 @@ Veivi Récords`,
   },
 
   {
+    title: "Gidon",
+    date: "2023-01-14",
+    image: "/images/tracks/2023-01-14.jpeg",
+    imagePosition: "left", // left or right
+    audio: "/audio/2023-01-14.mpeg",
+    content: `
+Queridines,
+Mejor que la de Gidon,
+Acá estamos.
+Muy feliz sábado,
+Saludos,
+Veivi Récords`,
+  },
+
+  {
+    title: "Línea de Fuga",
+    date: "2022-10-22",
+    image: "/images/tracks/2022-10-22.jpeg",
+    imagePosition: "right", // left or right
+    audio: "/audio/2022-10-22.mpeg",
+    content: `
+Muy buenas noches,
+Saludos, Veivi Récords`,
+  },
+
+
+  {
     title: "Extraños en la Noche",
     date: "2022-10-13",
     // image: "/images/tracks/2022-10-13.jpeg",
