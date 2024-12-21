@@ -1,5 +1,18 @@
 const posts = [
   {
+    title: "",
+    date: "2024-12-19", // Formato YYYY-MM-DD
+    // image: "/images/tracks/2024-11-24-TheWolf.jpeg", // Ruta a la imagen
+    // imagePosition: "right", // left or right
+    audio: "/audio/2024-12-19.mpeg", // Ruta al MP3
+    content: `
+    Queridines,
+
+    Efemérides de hoy.
+    Saludos,
+    Veivi Récords`,
+  },
+  {
     title: "PS: Only for iPod... 🎵",
     date: "2024-11-24", // Formato YYYY-MM-DD
     image: "/images/tracks/2024-11-24-TheWolf.jpeg", // Ruta a la imagen
@@ -7,8 +20,7 @@ const posts = [
     audio: "/audio/2024-11-24-TheWolf.mpeg", // Ruta al MP3
     content: `
     Good evening!
-    Greetings to Veivi Records...
-    `
+    Greetings to Veivi Records...`,
   },
   {
     title: "Here comes Polly Jean",
