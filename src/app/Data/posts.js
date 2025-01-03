@@ -1,6 +1,20 @@
 const posts = [
   {
     title: "",
+    date: "2024-12-31", // Formato YYYY-MM-DD
+    image: "/images/tracks/2024-12-31.jpeg", // Ruta a la imagen
+    imagePosition: "left", // left or right
+    audio: "/audio/2024-12-31.mpeg", // Ruta al MP3
+    content: `
+    Queridines,
+    Los quiero mucho,
+    Siempre juntos!
+
+    Saludos,
+    Veivi Récords`,
+  },
+  {
+    title: "",
     date: "2024-12-19", // Formato YYYY-MM-DD
     // image: "/images/tracks/2024-11-24-TheWolf.jpeg", // Ruta a la imagen
     // imagePosition: "right", // left or right
