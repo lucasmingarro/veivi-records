@@ -1,6 +1,6 @@
 const posts = [
   {
-    title: "La imagen que nos falta",
+    title: "La imagen que nos falta.",
     date: "2025-01-10", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-01-10.jpg", // Ruta a la imagen
     imagePosition: "left", // left or right
