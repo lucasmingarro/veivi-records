@@ -1,17 +1,51 @@
 const posts = [
   {
+    title: "La imagen que nos falta",
+    date: "2025-01-10", // Formato YYYY-MM-DD
+    image: "/images/tracks/2025-01-10.jpg", // Ruta a la imagen
+    imagePosition: "left", // left or right
+    audio: "/audio/2025-01-10.mpeg", // Ruta al MP3
+    attachments: [
+      // { url: "/attachments/file.pdf", text: "Text del link" },
+      { url: "/attachments/Quignard_le_image.pdf", text: "La imagen que nos falta by Pascal Quignard" }
+    ],
+    content: `
+Queridines, salud!
+
+El viento sacude el refugio,
+Las ráfagas no ceden.
+
+Hay fuego, hay tiza, hay música.
+
+Saludos,
+Veivi Récords
+(la cura hoy a cargo de Lauta)`,
+  },
+  {
+    title: "",
+    date: "2025-01-05", // Formato YYYY-MM-DD
+    image: "/images/tracks/2025-01-05.jpeg", // Ruta a la imagen
+    imagePosition: "right", // left or right
+    audio: "/audio/2025-01-05.mpeg", // Ruta al MP3
+    content: `
+Queridines,
+Muy buenas noches!
+Saludos,
+Veivi Récords`,
+  },
+  {
     title: "",
     date: "2024-12-31", // Formato YYYY-MM-DD
     image: "/images/tracks/2024-12-31.jpeg", // Ruta a la imagen
     imagePosition: "left", // left or right
     audio: "/audio/2024-12-31.mpeg", // Ruta al MP3
     content: `
-    Queridines,
-    Los quiero mucho,
-    Siempre juntos!
+Queridines,
+Los quiero mucho,
+Siempre juntos!
 
-    Saludos,
-    Veivi Récords`,
+Saludos,
+Veivi Récords`,
   },
   {
     title: "",
@@ -20,11 +54,11 @@ const posts = [
     // imagePosition: "right", // left or right
     audio: "/audio/2024-12-19.mpeg", // Ruta al MP3
     content: `
-    Queridines,
+Queridines,
 
-    Efemérides de hoy.
-    Saludos,
-    Veivi Récords`,
+Efemérides de hoy.
+Saludos,
+Veivi Récords`,
   },
   {
     title: "PS: Only for iPod... 🎵",
@@ -33,8 +67,8 @@ const posts = [
     imagePosition: "right", // left or right
     audio: "/audio/2024-11-24-TheWolf.mpeg", // Ruta al MP3
     content: `
-    Good evening!
-    Greetings to Veivi Records...`,
+Good evening!
+Greetings to Veivi Records...`,
   },
   {
     title: "Here comes Polly Jean",
@@ -43,11 +77,11 @@ const posts = [
     // imagePosition: "left", // left or right
     audio: "/audio/2024-10-03-PollyJean.mpeg",
     content: `
-    Queridines,
-    Muy buenas noches!
-    Con ustedes Polly Jean,
-    Saludos,
-    Veivi Récords`,
+Queridines,
+Muy buenas noches!
+Con ustedes Polly Jean,
+Saludos,
+Veivi Récords`,
   },
   {
     title: "My Eden",
@@ -70,9 +104,9 @@ const posts = [
     imagePosition: "right", // left or right
     audio: "/audio/2024-08-27.mpeg",
     content: `
-    Muy buenas noches,
-    Saludos,
-    Veivi Récords`,
+Muy buenas noches,
+Saludos,
+Veivi Récords`,
   },
 
   {
