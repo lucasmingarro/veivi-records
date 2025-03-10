@@ -1,5 +1,40 @@
 const posts = [
   {
+    title: "¿A qué precio la felicidad?",
+    date: "2025-03-07", // Formato YYYY-MM-DD
+    image: "/images/tracks/2025-03-07.png", // Ruta a la imagen
+    imagePosition: "left", // left or right
+    audio: "/audio/2025-03-07.mpeg", // Ruta al MP3
+    attachments: [
+      // { url: "/attachments/file.pdf", text: "Text del link" },
+      { url: "/attachments/maquetacic3b3n-completa.pdf", text: "Los que se marchan de Omelas" }
+    ],
+    content: `
+Queridines
+algo viejo...
+
+Saludos,
+Veivi Récord`,
+  },
+  {
+    title: "Test Pattern",
+    date: "2025-02-19", // Formato YYYY-MM-DD
+    image: "/images/tracks/2025-02-19.png", // Ruta a la imagen
+    imagePosition: "right", // left or right
+    audio: "/audio/2025-02-19.mpeg", // Ruta al MP3
+    attachments: [
+      // { url: "/attachments/file.pdf", text: "Text del link" },
+      { url: "https://www.youtube.com/watch?v=xCHGmkNY_Q4&t=480s", text: "No Maps for These Territories" }
+    ],
+    content: `
+.queridines.
+
+Minuto 8.
+
+Saludos,
+Veivi Récords`,
+  },
+  {
     title: "La imagen que nos falta",
     date: "2025-01-10", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-01-10.jpg", // Ruta a la imagen

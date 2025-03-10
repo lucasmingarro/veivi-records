@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import TidalIcon from "../assets/icons/TidalIcon";
 import * as Unicons from "@iconscout/react-unicons"
 export default function Footer() {
     return (
