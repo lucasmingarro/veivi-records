@@ -39,6 +39,7 @@
   "devDependencies": {
     "@aws-amplify/backend": "^1.8.0",
     "@aws-amplify/backend-cli": "^1.4.2",
+    "@types/react": "^19.1.5",
     "autoprefixer": "^10.4.20",
     "aws-cdk": "^2.171.1",
     "aws-cdk-lib": "^2.171.1",
