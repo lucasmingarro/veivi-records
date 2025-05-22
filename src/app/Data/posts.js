@@ -1,5 +1,67 @@
 const posts = [
   {
+    title: "¿Y si esta vez nos miramos?",
+    date: "2025-05-08", // Formato YYYY-MM-DD
+    image: "/images/tracks/2025-05-08.jpeg", // Ruta a la imagen
+    imagePosition: "right", // left or right
+    audio: "/audio/2025-05-08.mpeg", // Ruta al MP3
+    content: `
+Muy buenas noches.....
+
+queridines,
+Muy buenas noches
+🤗`,
+  },
+    {
+    title: "I am sorry, woman",
+    date: "2025-05-01", // Formato YYYY-MM-DD
+    image: "/images/tracks/2025-05-01.jpeg", // Ruta a la imagen
+    imagePosition: "right", // left or right
+    audio: "/audio/2025-05-01.mpeg", // Ruta al MP3
+    content: `
+Saludos,
+Veivi Récords`,
+  },
+  {
+    title: "Only a Reflextion",
+    date: "2025-04-06", // Formato YYYY-MM-DD
+    image: "/images/tracks/2025-04-06.jpg", // Ruta a la imagen
+    imagePosition: "right", // left or right
+    audio: "/audio/2025-04-06.mpeg", // Ruta al MP3
+    content: `
+Queridines,
+Muy buenas noches...
+desde la quinta de Tommy.
+
+Saludos,
+Veivi Récords`,
+  },
+    {
+    title: "Viernes!!!",
+    date: "2025-03-28", // Formato YYYY-MM-DD
+    // image: "/images/tracks/2025-03-27.jpeg", // Ruta a la imagen
+    imagePosition: "left", // left or right
+    audio: "/audio/2025-03-28.mpeg", // Ruta al MP3
+    content: `
+Queridines,
+Buen finde!
+
+Saludos,
+Veivi Récords`,
+  },
+  {
+    title: "Dobro y más Dobro",
+    date: "2025-03-27", // Formato YYYY-MM-DD
+    image: "/images/tracks/2025-03-27.jpeg", // Ruta a la imagen
+    imagePosition: "left", // left or right
+    audio: "/audio/2025-03-27.mp3", // Ruta al MP3
+    content: `
+Forget us, forget us all, it makes no difference now, but don't forget we loved it when we were alive
+
+Saludos,
+Veivi Récord`,
+  },
+  {
     title: "¿A qué precio la felicidad?",
     date: "2025-03-07", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-03-07.png", // Ruta a la imagen
