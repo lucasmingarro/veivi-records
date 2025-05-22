@@ -1,5 +1,17 @@
 const posts = [
   {
+    title: "Lejos del borde",
+    date: "2025-05-16", // Formato YYYY-MM-DD
+    // image: "/images/tracks/2025-05-08.jpeg", // Ruta a la imagen
+    // imagePosition: "right", // left or right
+    audio: "/audio/2025-05-16.mpeg", // Ruta al MP3
+    content: `
+Queridines,
+Muy buenas noches!
+Saludos,
+Veivi Récords`,
+  },
+  {
     title: "¿Y si esta vez nos miramos?",
     date: "2025-05-08", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-05-08.jpeg", // Ruta a la imagen
