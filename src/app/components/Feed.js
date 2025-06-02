@@ -5,20 +5,35 @@ import ReactAudioPlayer from "react-audio-player";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Image from "next/image";
 import postsData from "../Data/posts";
+import { UilShare } from '@iconscout/react-unicons';
+import toast from 'react-hot-toast';
+import { useSearchParams } from 'next/navigation';
 
 export default function Feed() {
   const [posts, setPosts] = useState([]);
   const [visiblePosts, setVisiblePosts] = useState([]);
-  const [expandedPosts, setExpandedPosts] = useState([]); // IDs de los posts expandidos
+  const [expandedPosts, setExpandedPosts] = useState([]);
   const [hasMore, setHasMore] = useState(true);
+  const searchParams = useSearchParams();
+  const scrollTo = searchParams.get('scrollTo');
 
   useEffect(() => {
     const sortedPosts = [...postsData].sort(
       (a, b) => new Date(b.date) - new Date(a.date)
-    );
+    ).map((post, index) => ({
+      ...post,
+      id: post.id || `post-${index}`
+    }));
+
     setPosts(sortedPosts);
-    setVisiblePosts(sortedPosts.slice(0, 5)); // Mostrar los primeros 5
-  }, []);
+
+    if (scrollTo) {
+      setVisiblePosts(sortedPosts); // Cargamos todos los posts si hay scrollTo
+      setHasMore(false);
+    } else {
+      setVisiblePosts(sortedPosts.slice(0, 5));
+    }
+  }, [scrollTo]);
 
   const loadMorePosts = () => {
     const currentLength = visiblePosts.length;
@@ -32,9 +47,18 @@ export default function Feed() {
   const toggleContent = (postId) => {
     setExpandedPosts((prev) =>
       prev.includes(postId)
-        ? prev.filter((id) => id !== postId) // Quita el ID si ya está expandido
-        : [...prev, postId] // Agrega el ID si no está expandido
+        ? prev.filter((id) => id !== postId)
+        : [...prev, postId]
     );
+  };
+
+  const handleShare = (postId) => {
+    const url = `${window.location.origin}?scrollTo=${postId}`;
+    navigator.clipboard.writeText(url).then(() => {
+      toast.success('Link copied!');
+    }).catch(() => {
+      toast.error('Error copying the link!');
+    });
   };
 
   const MAX_CHARACTERS = 350;
@@ -60,13 +84,13 @@ export default function Feed() {
             </p>
           }
           style={{
-            overflow: "hidden", // Asegura que no cause desbordamiento horizontal
-            maxWidth: "100%", // Limita el ancho
+            overflow: "hidden",
+            maxWidth: "100%",
           }}
         >
           <div className="grid gap-8">
             {visiblePosts.map((post) => {
-              const isExpanded = expandedPosts.includes(post.id); // Comprueba si el post está expandido
+              const isExpanded = expandedPosts.includes(post.id);
               const contentToDisplay = isExpanded
                 ? post.content
                 : `${post.content.slice(0, MAX_CHARACTERS)}...`;
@@ -74,6 +98,7 @@ export default function Feed() {
               return (
                 <div
                   key={post.id}
+                  id={post.id}
                   className="p-6 border rounded-lg shadow-md bg-white dark:bg-slate-900 dark:border-gray-800 transition-colors flex flex-col md:flex-row items-start md:items-start md:gap-6 gap-4"
                 >
                   {post.image && post.imagePosition === "left" && (
@@ -88,16 +113,21 @@ export default function Feed() {
                     </div>
                   )}
                   <div className="w-full flex-1">
-                    {/* Título y Fecha */}
                     <div>
                       <h3 className="text-xl font-semibold mb-1 text-dark dark:text-white transition-colors">
                         {post.title}
                       </h3>
-                      <p className="text-gray-500 text-sm mb-4 dark:text-gray-400 transition-colors">
+                      <p className="text-gray-500 text-sm mb-4 dark:text-gray-400 transition-colors flex items-center">
                         {new Date(new Date(post.date).setHours(new Date(post.date).getHours() + 3)).toLocaleDateString('es-AR')}
+                        <button
+                          onClick={() => handleShare(post.id)}
+                          title="Share"
+                          className="ml-2 text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600"
+                        >
+                          <UilShare size="20" />
+                        </button>
                       </p>
                     </div>
-                    {/* Reproductor de Audio */}
                     {post.audio && (
                       <ReactAudioPlayer
                         src={post.audio}
@@ -105,7 +135,6 @@ export default function Feed() {
                         className="mb-4 w-full"
                       />
                     )}
-                    {/* Texto de Contenido */}
                     {post.content && (
                       <div>
                         <p
@@ -134,7 +163,6 @@ export default function Feed() {
                         )}
                       </div>
                     )}
-                    {/* Attachments */}
                     {post.attachments && post.attachments.length > 0 && (
                       <div className="mt-4">
                         <ul className="list-disc pl-5">

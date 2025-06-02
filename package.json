@@ -25,6 +25,7 @@
     "react-countup": "^6.5.3",
     "react-dom": "^18.3.1",
     "react-feather": "^2.0.10",
+    "react-hot-toast": "^2.5.2",
     "react-infinite-scroll-component": "^6.1.0",
     "react-modal-video": "^2.0.0",
     "react-router-dom": "^7.0.1",
