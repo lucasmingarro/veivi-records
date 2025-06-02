@@ -39,7 +39,7 @@ Take a dive, explore the vibes, and enjoy this collection of moments that were o
                                  Veivi Récords</p>
 
                             <div className="mt-6">
-                                <Link href="#project" className="btn bg-amber-500/10 hover:bg-amber-500 border-amber-500/10 hover:border-amber-500 text-amber-500 hover:text-white rounded-md me-2 mt-2">Feed</Link>
+                                <Link href={{ pathname: '/', query: { scrollTo: 'feed' } }} className="btn bg-amber-500/10 hover:bg-amber-500 border-amber-500/10 hover:border-amber-500 text-amber-500 hover:text-white rounded-md me-2 mt-2">Feed</Link>
                             </div>
                         </div>
                     </div>
