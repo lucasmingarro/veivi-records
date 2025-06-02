@@ -1,6 +1,21 @@
 const posts = [
   {
     title: "Lejos del borde",
+    date: "2025-05-30", // Formato YYYY-MM-DD
+    image: "/images/tracks/2025-05-30.jpeg", // Ruta a la imagen
+    imagePosition: "left", // left or right
+    audio: "/audio/2025-05-30.mpeg", // Ruta al MP3
+    content: `
+Queridines,
+Muy buenas noches!
+
+Hace mucho, en un teatro, entraban y salían....dos pianos, unos frente a otro.
+
+Saludos,
+Veivi Récords`,
+  },
+  {
+    title: "Lejos del borde",
     date: "2025-05-16", // Formato YYYY-MM-DD
     // image: "/images/tracks/2025-05-08.jpeg", // Ruta a la imagen
     // imagePosition: "right", // left or right
