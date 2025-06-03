@@ -1,6 +1,6 @@
 const posts = [
   {
-    title: "Lejos del borde",
+    title: "Sereno",
     date: "2025-05-30", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-05-30.jpeg", // Ruta a la imagen
     imagePosition: "left", // left or right
