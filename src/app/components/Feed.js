@@ -7,15 +7,14 @@ import Image from "next/image";
 import postsData from "../Data/posts";
 import { UilShare } from '@iconscout/react-unicons';
 import toast from 'react-hot-toast';
-import { useSearchParams } from 'next/navigation';
 
-export default function Feed() {
+export default function Feed({ scrollTarget, onContentLoaded }) {
   const [posts, setPosts] = useState([]);
   const [visiblePosts, setVisiblePosts] = useState([]);
   const [expandedPosts, setExpandedPosts] = useState([]);
   const [hasMore, setHasMore] = useState(true);
-  const searchParams = useSearchParams();
-  const scrollTo = searchParams.get('scrollTo');
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [loadedImages, setLoadedImages] = useState(new Set());
 
   useEffect(() => {
     const sortedPosts = [...postsData].sort(
@@ -27,13 +26,54 @@ export default function Feed() {
 
     setPosts(sortedPosts);
 
-    if (scrollTo) {
-      setVisiblePosts(sortedPosts); // Cargamos todos los posts si hay scrollTo
+    if (scrollTarget) {
+      // If there's a scroll target, load all posts immediately
+      setVisiblePosts(sortedPosts);
       setHasMore(false);
     } else {
       setVisiblePosts(sortedPosts.slice(0, 5));
     }
-  }, [scrollTo]);
+
+    // Mark as loaded after a small delay to ensure rendering
+    setTimeout(() => setIsLoaded(true), 50);
+  }, [scrollTarget]);
+
+  // Automatically expand the target post if it exists
+  useEffect(() => {
+    if (isLoaded && scrollTarget && !expandedPosts.includes(scrollTarget)) {
+      const targetPost = posts.find(post => post.id === scrollTarget);
+      if (targetPost && targetPost.content && targetPost.content.length > MAX_CHARACTERS) {
+        setExpandedPosts(prev => [...prev, scrollTarget]);
+      }
+    }
+  }, [isLoaded, scrollTarget, posts, expandedPosts]);
+
+  // Track image loading for target post
+  const handleImageLoad = (postId) => {
+    setLoadedImages(prev => {
+      const newSet = new Set(prev);
+      newSet.add(postId);
+      return newSet;
+    });
+  };
+
+  // Notify parent when target post content is ready
+  useEffect(() => {
+    if (scrollTarget && isLoaded) {
+      const targetPost = visiblePosts.find(post => post.id === scrollTarget);
+      if (targetPost) {
+        // If target post has image, wait for it to load
+        if (targetPost.image) {
+          if (loadedImages.has(targetPost.id)) {
+            onContentLoaded && onContentLoaded();
+          }
+        } else {
+          // No image, content is ready
+          onContentLoaded && onContentLoaded();
+        }
+      }
+    }
+  }, [scrollTarget, isLoaded, visiblePosts, loadedImages, onContentLoaded]);
 
   const loadMorePosts = () => {
     const currentLength = visiblePosts.length;
@@ -91,6 +131,7 @@ export default function Feed() {
           <div className="grid gap-8">
             {visiblePosts.map((post) => {
               const isExpanded = expandedPosts.includes(post.id);
+              const isTargetPost = post.id === scrollTarget;
               const contentToDisplay = isExpanded
                 ? post.content
                 : `${post.content.slice(0, MAX_CHARACTERS)}...`;
@@ -99,7 +140,8 @@ export default function Feed() {
                 <div
                   key={post.id}
                   id={post.id}
-                  className="p-6 border rounded-lg shadow-md bg-white dark:bg-slate-900 dark:border-gray-800 transition-colors flex flex-col md:flex-row items-start md:items-start md:gap-6 gap-4"
+                  className={`p-6 border rounded-lg shadow-md bg-white dark:bg-slate-900 dark:border-gray-800 transition-colors flex flex-col md:flex-row items-start md:items-start md:gap-6 gap-4 ${isTargetPost ? 'ring-2 ring-blue-500 dark:ring-blue-400' : ''
+                    }`}
                 >
                   {post.image && post.imagePosition === "left" && (
                     <div className="relative w-full md:w-auto sd:w-auto flex-shrink-0">
@@ -109,6 +151,9 @@ export default function Feed() {
                         width={400}
                         height={250}
                         className="w-full max-w-[400px] object-contain rounded-md"
+                        priority={isTargetPost}
+                        onLoad={() => handleImageLoad(post.id)}
+                        onError={() => handleImageLoad(post.id)}
                       />
                     </div>
                   )}
@@ -132,6 +177,7 @@ export default function Feed() {
                       <ReactAudioPlayer
                         src={post.audio}
                         controls
+                        preload={isTargetPost ? "auto" : "metadata"}
                         className="mb-4 w-full"
                       />
                     )}
@@ -190,6 +236,9 @@ export default function Feed() {
                         width={400}
                         height={250}
                         className="w-full max-w-[400px] object-contain rounded-md"
+                        priority={isTargetPost}
+                        onLoad={() => handleImageLoad(post.id)}
+                        onError={() => handleImageLoad(post.id)}
                       />
                     </div>
                   )}
