@@ -32,34 +32,35 @@ export default function Index() {
                 const element = document.getElementById(scrollTarget);
 
                 if (element) {
-                    // Calculate navbar height dynamically
                     const navbar = document.querySelector('nav') || document.querySelector('.navbar');
                     const navbarHeight = navbar ? navbar.offsetHeight : 0;
-                    const additionalOffset = 20; // Extra spacing
 
                     // Get element position
-                    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-                    const offsetPosition = elementPosition - navbarHeight - additionalOffset;
+                    const elementRect = element.getBoundingClientRect();
+                    const elementPosition = elementRect.top + window.pageYOffset;
 
-                    // Use native scroll for more reliable behavior
+                    // Dynamic offset based on element position or use viewport-based positioning
+                    let offsetPosition;
+
+                    // Option 1: Center the element in the viewport
+                    const viewportCenter = window.innerHeight / 2;
+                    offsetPosition = elementPosition - viewportCenter;
+
+                    // Option 2: Or use a percentage-based approach
+                    // const offsetFromTop = window.innerHeight * 0.2; // 20% from top
+                    // offsetPosition = elementPosition - navbarHeight - offsetFromTop;
+
+                    console.log('Window height:', window.innerHeight);
+                    console.log('Viewport center:', viewportCenter);
+                    console.log('Element position:', elementPosition);
+                    console.log('Final offset position:', offsetPosition);
+
                     window.scrollTo({
-                        top: offsetPosition,
+                        top: Math.max(0, offsetPosition), // Prevent negative scroll
                         behavior: 'smooth'
                     });
 
-                    // Alternative: Use react-scroll with calculated offset
-                    // scroller.scrollTo(scrollTarget, {
-                    //     duration: 500,
-                    //     smooth: true,
-                    //     offset: -(navbarHeight + additionalOffset),
-                    // });
-
                     console.log('Scrolled to element:', scrollTarget, 'at position:', offsetPosition);
-                } else if (attempts < 30) { // Increased attempts for slower connections
-                    console.log(`Attempt ${attempts + 1}: Element '${scrollTarget}' not found, retrying...`);
-                    setTimeout(() => attemptScroll(attempts + 1), 100);
-                } else {
-                    console.warn(`Element with id '${scrollTarget}' not found after ${attempts} attempts`);
                 }
             };
 
