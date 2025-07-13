@@ -1,5 +1,33 @@
 const posts = [
   {
+    title: "Hard Times",
+    date: "2025-07-13", // Formato YYYY-MM-DD
+    image: "/images/tracks/2025-07-13.jpeg", // Ruta a la imagen
+    imagePosition: "right", // left or right
+    audio: "/audio/2025-07-13.mpeg", // Ruta al MP3
+    content: `
+Queridines,
+Muy buenas noches.
+Saludos,
+Veivi Récords`,
+  },
+  {
+    title: "Estilitas",
+    date: "2025-07-06", // Formato YYYY-MM-DD
+    // image: "/images/tracks/2025-03-07.png", // Ruta a la imagen
+    // imagePosition: "left", // left or right
+    audio: "/audio/2025-07-06.mpeg", // Ruta al MP3
+    attachments: [
+      // { url: "/attachments/file.pdf", text: "Text del link" },
+      { url: "/attachments/aballayrelato.pdf", text: "Aballay Relato" }
+    ],
+    content: `
+Queridines,
+Muy buenas noches.
+Saludos,
+Veivi Récords`,
+  },
+  {
     title: "Sereno",
     date: "2025-05-30", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-05-30.jpeg", // Ruta a la imagen
