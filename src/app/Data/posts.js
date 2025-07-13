@@ -28,6 +28,21 @@ Saludos,
 Veivi Récords`,
   },
   {
+    title: "Puente Pacífico",
+    date: "2025-06-21", // Formato YYYY-MM-DD
+    image: "/images/tracks/2025-06-21.jpg", // Ruta a la imagen
+    imagePosition: "left", // left or right
+    audio: "/audio/2025-06-21.mpeg", // Ruta al MP3
+    content: `
+Queridines,
+Muy buenas noches!
+
+En esta edición, dos estrellas de mar esperan....
+
+Saludos,
+Veivi Récords`,
+  },
+  {
     title: "Sereno",
     date: "2025-05-30", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-05-30.jpeg", // Ruta a la imagen
