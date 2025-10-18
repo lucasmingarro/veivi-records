@@ -1,5 +1,31 @@
 const posts = [
   {
+    title: "Malena",
+    date: "2025-09-10", // Formato YYYY-MM-DD
+    image: "/images/tracks/2025-09-10.png", // Ruta a la imagen
+    imagePosition: "right", // left or right
+    audio: "/audio/2025-09-10.mpeg", // Ruta al MP3
+    content: `
+Queridines,
+Muy buenas noches!
+Abu Azu, muy feliz cumple!
+😘
+Saludos,
+Veivi Récords`,
+  },
+    {
+    title: "El Robert",
+    date: "2025-08-03", // Formato YYYY-MM-DD
+    image: "/images/tracks/2025-08-03.jpeg", // Ruta a la imagen
+    imagePosition: "left", // left or right
+    audio: "/audio/2025-08-03.mpeg", // Ruta al MP3
+    content: `
+Queridines,
+Muy buenas tardes
+Saludos,
+Veivi Récords`,
+  },
+  {
     title: "Hard Times",
     date: "2025-07-13", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-07-13.jpeg", // Ruta a la imagen
