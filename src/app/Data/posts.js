@@ -1,5 +1,32 @@
 const posts = [
   {
+    title: "Era hermoso",
+    date: "2026-07-23", // Formato YYYY-MM-DD
+    audio: "/audio/2026-07-23.mpeg",
+    content: `
+Queridines,
+A pedido de quienes me extrañan....
+
+And I was free
+Needed nobody
+It was beautiful
+
+Saludos, 
+Veivi Récords`,
+  },
+  {
+    title: "I've been waitin' on the fault line",
+    date: "2026-08-30", // Formato YYYY-MM-DD
+    image: "/images/tracks/2026-08-30.jpeg",
+    imagePosition: "left", // left or right
+    audio: "/audio/2026-08-30.mpeg",
+    content: `
+Queridines,
+Muy buenas noches.
+Saludos,
+Veivi Récords.`,
+  },
+  {
     title: "Malena",
     date: "2025-09-10", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-09-10.png", // Ruta a la imagen

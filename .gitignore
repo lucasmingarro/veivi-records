@@ -41,3 +41,6 @@ amplifyconfiguration*
 
 # npm cache
 .npm
+
+# WhatsApp export drop zone for ingestion script
+/inbox/
