@@ -1,6 +1,7 @@
 const posts = [
   {
     title: "There is too much to say and too much to feel",
+    id: 52,
     date: "2026-09-12", // Formato YYYY-MM-DD
     image: "/images/tracks/2026-09-12.jpeg",
     imagePosition: "right", // left or right
@@ -14,6 +15,7 @@ Veivi Récords`,
   },
   {
     title: "Cambios",
+    id: 53,
     date: "2026-09-17", // Formato YYYY-MM-DD
     audio: "/audio/2026-09-17.mpeg",
     content: `
@@ -23,6 +25,7 @@ Veivi Récords`,
   },
   {
     title: "",
+    id: 54,
     date: "2026-09-24", // Formato YYYY-MM-DD
     audio: "/audio/2026-09-24.mp4",
     content: `
@@ -32,6 +35,7 @@ Veivi Récords`,
   },
   {
     title: "Era hermoso",
+    id: 50,
     date: "2026-07-23", // Formato YYYY-MM-DD
     audio: "/audio/2026-07-23.mpeg",
     content: `
@@ -47,6 +51,7 @@ Veivi Récords`,
   },
   {
     title: "I've been waitin' on the fault line",
+    id: 51,
     date: "2026-08-30", // Formato YYYY-MM-DD
     image: "/images/tracks/2026-08-30.jpeg",
     imagePosition: "left", // left or right
@@ -59,6 +64,7 @@ Veivi Récords.`,
   },
   {
     title: "Malena",
+    id: 49,
     date: "2025-09-10", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-09-10.png", // Ruta a la imagen
     imagePosition: "right", // left or right
@@ -73,6 +79,7 @@ Veivi Récords`,
   },
     {
     title: "El Robert",
+    id: 48,
     date: "2025-08-03", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-08-03.jpeg", // Ruta a la imagen
     imagePosition: "left", // left or right
@@ -85,6 +92,7 @@ Veivi Récords`,
   },
   {
     title: "Hard Times",
+    id: 47,
     date: "2025-07-13", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-07-13.jpeg", // Ruta a la imagen
     imagePosition: "right", // left or right
@@ -97,6 +105,7 @@ Veivi Récords`,
   },
   {
     title: "Estilitas",
+    id: 46,
     date: "2025-07-06", // Formato YYYY-MM-DD
     // image: "/images/tracks/2025-03-07.png", // Ruta a la imagen
     // imagePosition: "left", // left or right
@@ -113,6 +122,7 @@ Veivi Récords`,
   },
   {
     title: "Puente Pacífico",
+    id: 45,
     date: "2025-06-21", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-06-21.jpg", // Ruta a la imagen
     imagePosition: "left", // left or right
@@ -128,6 +138,7 @@ Veivi Récords`,
   },
   {
     title: "Sereno",
+    id: 44,
     date: "2025-05-30", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-05-30.jpeg", // Ruta a la imagen
     imagePosition: "left", // left or right
@@ -143,6 +154,7 @@ Veivi Récords`,
   },
   {
     title: "Lejos del borde",
+    id: 43,
     date: "2025-05-16", // Formato YYYY-MM-DD
     // image: "/images/tracks/2025-05-08.jpeg", // Ruta a la imagen
     // imagePosition: "right", // left or right
@@ -155,6 +167,7 @@ Veivi Récords`,
   },
   {
     title: "¿Y si esta vez nos miramos?",
+    id: 42,
     date: "2025-05-08", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-05-08.jpeg", // Ruta a la imagen
     imagePosition: "right", // left or right
@@ -168,6 +181,7 @@ Muy buenas noches
   },
     {
     title: "I am sorry, woman",
+    id: 41,
     date: "2025-05-01", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-05-01.jpeg", // Ruta a la imagen
     imagePosition: "right", // left or right
@@ -178,6 +192,7 @@ Veivi Récords`,
   },
   {
     title: "Only a Reflextion",
+    id: 40,
     date: "2025-04-06", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-04-06.jpg", // Ruta a la imagen
     imagePosition: "right", // left or right
@@ -192,6 +207,7 @@ Veivi Récords`,
   },
     {
     title: "Viernes!!!",
+    id: 39,
     date: "2025-03-28", // Formato YYYY-MM-DD
     // image: "/images/tracks/2025-03-27.jpeg", // Ruta a la imagen
     imagePosition: "left", // left or right
@@ -205,6 +221,7 @@ Veivi Récords`,
   },
   {
     title: "Dobro y más Dobro",
+    id: 38,
     date: "2025-03-27", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-03-27.jpeg", // Ruta a la imagen
     imagePosition: "left", // left or right
@@ -217,6 +234,7 @@ Veivi Récord`,
   },
   {
     title: "¿A qué precio la felicidad?",
+    id: 37,
     date: "2025-03-07", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-03-07.png", // Ruta a la imagen
     imagePosition: "left", // left or right
@@ -234,6 +252,7 @@ Veivi Récord`,
   },
   {
     title: "Test Pattern",
+    id: 36,
     date: "2025-02-19", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-02-19.png", // Ruta a la imagen
     imagePosition: "right", // left or right
@@ -252,6 +271,7 @@ Veivi Récords`,
   },
   {
     title: "La imagen que nos falta",
+    id: 35,
     date: "2025-01-10", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-01-10.jpg", // Ruta a la imagen
     imagePosition: "left", // left or right
@@ -274,6 +294,7 @@ Veivi Récords
   },
   {
     title: "",
+    id: 34,
     date: "2025-01-05", // Formato YYYY-MM-DD
     image: "/images/tracks/2025-01-05.jpeg", // Ruta a la imagen
     imagePosition: "right", // left or right
@@ -286,6 +307,7 @@ Veivi Récords`,
   },
   {
     title: "",
+    id: 33,
     date: "2024-12-31", // Formato YYYY-MM-DD
     image: "/images/tracks/2024-12-31.jpeg", // Ruta a la imagen
     imagePosition: "left", // left or right
@@ -300,6 +322,7 @@ Veivi Récords`,
   },
   {
     title: "",
+    id: 32,
     date: "2024-12-19", // Formato YYYY-MM-DD
     // image: "/images/tracks/2024-11-24-TheWolf.jpeg", // Ruta a la imagen
     // imagePosition: "right", // left or right
@@ -313,6 +336,7 @@ Veivi Récords`,
   },
   {
     title: "PS: Only for iPod... 🎵",
+    id: 31,
     date: "2024-11-24", // Formato YYYY-MM-DD
     image: "/images/tracks/2024-11-24-TheWolf.jpeg", // Ruta a la imagen
     imagePosition: "right", // left or right
@@ -323,6 +347,7 @@ Greetings to Veivi Records...`,
   },
   {
     title: "Here comes Polly Jean",
+    id: 30,
     date: "2024-10-03",
     // image: "/images/tracks/2024-10-03-PollyJean.webp",
     // imagePosition: "left", // left or right
@@ -336,6 +361,7 @@ Veivi Récords`,
   },
   {
     title: "My Eden",
+    id: 28,
     date: "2024-08-27",
     image: "/images/tracks/2024-10-03-Eden.jpg",
     imagePosition: "left", // left or right
@@ -350,6 +376,7 @@ Veivi Récords`,
 
   {
     title: "Ilusión",
+    id: 29,
     date: "2024-08-27",
     image: "/images/tracks/2024-08-27.jpeg",
     imagePosition: "right", // left or right
@@ -362,6 +389,7 @@ Veivi Récords`,
 
   {
     title: "Such a Shame",
+    id: 27,
     date: "2024-08-09",
     image: "/images/tracks/2024-08-09.jpeg",
     imagePosition: "left", // left or right
@@ -374,6 +402,7 @@ Veivi Récord`,
 
   {
     title: "Just a little rain....fclti",
+    id: 26,
     date: "2024-07-19",
     // image: "/images/tracks/2024-08-09.jpeg",
     // imagePosition: "left", // left or right
@@ -388,6 +417,7 @@ Veivi Récords`,
 
   {
     title: "Praça da Sé",
+    id: 25,
     date: "2024-06-15",
     image: "/images/tracks/2024-06-15.jpeg",
     imagePosition: "right", // left or right
@@ -403,6 +433,7 @@ Veivi Récords`,
 
   {
     title: "Shine",
+    id: 24,
     date: "2024-06-07",
     // image: "/images/tracks/2024-06-15.jpeg",
     // imagePosition: "right", // left or right
@@ -416,6 +447,7 @@ Saludos`,
 
   {
     title: "This Visions",
+    id: 23,
     date: "2024-05-17",
     // image: "/images/tracks/2024-06-15.jpeg",
     // imagePosition: "right", // left or right
@@ -431,6 +463,7 @@ Veivi Récords`,
 
   {
     title: "🍷",
+    id: 22,
     date: "2024-05-01",
     image: "/images/tracks/2024-05-01.jpeg",
     imagePosition: "right", // left or right
@@ -447,6 +480,7 @@ Speak now before it is too late, and then hope to go on speaking until there is 
 
   {
     title: "Feliz Navidad",
+    id: 21,
     date: "2023-12-25",
     image: "/images/tracks/2023-12-25.jpeg",
     imagePosition: "left", // left or right
@@ -460,6 +494,7 @@ Veivi Récords`,
 
   {
     title: "",
+    id: 20,
     date: "2023-12-07",
     image: "/images/tracks/2023-12-07.jpeg",
     imagePosition: "right", // left or right
@@ -474,6 +509,7 @@ Veivi Récords`,
 
   {
     title: "Crawling all over",
+    id: 19,
     date: "2023-12-02",
     // image: "/images/tracks/2023-12-07.jpeg",
     // imagePosition: "right", // left or right
@@ -487,6 +523,7 @@ Veivi Récords`,
 
   {
     title: "Gidon",
+    id: 18,
     date: "2023-01-14",
     image: "/images/tracks/2023-01-14.jpeg",
     imagePosition: "left", // left or right
@@ -502,6 +539,7 @@ Veivi Récords`,
 
   {
     title: "Línea de Fuga",
+    id: 17,
     date: "2022-10-22",
     image: "/images/tracks/2022-10-22.jpeg",
     imagePosition: "right", // left or right
@@ -514,6 +552,7 @@ Saludos, Veivi Récords`,
 
   {
     title: "Extraños en la Noche",
+    id: 16,
     date: "2022-10-13",
     // image: "/images/tracks/2022-10-13.jpeg",
     // imagePosition: "right", // left or right
@@ -530,6 +569,7 @@ Veivi Récords`,
 
   {
     title: "",
+    id: 15,
     date: "2022-10-08",
     image: "/images/tracks/2022-10-08.jpeg",
     imagePosition: "left", // left or right
@@ -541,6 +581,7 @@ Veivi Récords`,
 
   {
     title: "",
+    id: 14,
     date: "2022-10-04",
     image: "/images/tracks/2022-10-04.jpeg",
     imagePosition: "right", // left or right
@@ -553,6 +594,7 @@ Veivi Récords`,
 
   {
     title: "Veivi special",
+    id: 13,
     date: "2022-09-27",
     image: "/images/tracks/2022-09-27.jpeg",
     imagePosition: "left", // left or right
@@ -568,6 +610,7 @@ Veivi Récords`,
 
   {
     title: "DEVI/ATION",
+    id: 12,
     date: "2022-09-25",
     image: "/images/tracks/2022-09-25.jpeg",
     imagePosition: "right", // left or right
@@ -580,6 +623,7 @@ Veivi Récords`,
 
   {
     title: "",
+    id: 11,
     date: "2022-07-21",
     image: "/images/tracks/2022-07-21.jpeg",
     imagePosition: "left", // left or right
@@ -592,6 +636,7 @@ Veivi Récords`,
 
   {
     title: "",
+    id: 10,
     date: "2022-07-16",
     image: "/images/tracks/2022-07-16.jpeg",
     imagePosition: "right", // left or right
@@ -605,6 +650,7 @@ Veivi Récords`,
 
   {
     title: "Lado B",
+    id: 9,
     date: "2022-07-03",
     // image: "/images/tracks/2022-07-21.jpeg",
     // imagePosition: "left", // left or right
@@ -619,6 +665,7 @@ Ringo y el lado b de Veivi Récords`,
 
   {
     title: "Dos Cosas",
+    id: 8,
     date: "2022-06-10",
     // image: "/images/tracks/2022-01-07.jpeg",
     // imagePosition: "left", // left or right
@@ -638,6 +685,7 @@ Veivi Récords`,
 
   {
     title: "",
+    id: 7,
     date: "2022-06-06",
     image: "/images/tracks/2022-06-06.jpeg",
     imagePosition: "right", // left or right
@@ -650,6 +698,7 @@ Veivi Récords`,
 
   {
     title: "Rita",
+    id: 6,
     date: "2022-05-25",
     image: "/images/tracks/2022-05-25.jpeg",
     imagePosition: "left", // left or right
@@ -702,6 +751,7 @@ Between Rita and my eyes — A rifle
 
   {
     title: "2022 🍸",
+    id: 5,
     date: "2022-01-07",
     image: "/images/tracks/2022-01-07.jpeg",
     imagePosition: "right", // left or right
@@ -715,6 +765,7 @@ Veivi Récords.`,
 
   {
     title: "from the haze..",
+    id: 4,
     date: "2021-04-28",
     // image: "/images/tracks/2021-04-28.jpeg",
     // imagePosition: "right", // left or right
@@ -728,6 +779,7 @@ Veivi Récords.`,
 
   {
     title: "",
+    id: 3,
     date: "2020-11-24",
     image: "/images/tracks/2020-11-24.jpeg",
     imagePosition: "right", // left or right
@@ -741,6 +793,7 @@ Veivi récords`,
 
   {
     title: "",
+    id: 2,
     date: "2020-11-07",
     image: "/images/tracks/2020-11-07.jpeg",
     imagePosition: "left", // left or right
@@ -755,6 +808,7 @@ Veivi récords`,
 
   {
     title: "Desenamorarse",
+    id: 1,
     date: "2020-10-25",
     // image: "/images/tracks/2023-12-07.jpeg",
     // imagePosition: "right", // left or right

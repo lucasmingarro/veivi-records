@@ -26,75 +26,79 @@ export default function Index() {
         }
     }, []);
 
+    // Scroll to ?scrollTo=<element id>. Feed is loaded dynamically and images
+    // can shift the layout, so: poll until the target exists, scroll, then keep
+    // it aligned while the layout settles, until the user scrolls on their own.
     useEffect(() => {
-        if (isReady && scrollTarget) {
-            const attemptScroll = (attempts = 0) => {
-                const element = document.getElementById(scrollTarget);
+        if (!isReady || !scrollTarget) return;
 
-                if (element) {
-                    const navbar = document.querySelector('nav') || document.querySelector('.navbar');
-                    const navbarHeight = navbar ? navbar.offsetHeight : 0;
+        const POLL_MS = 200;
+        const MAX_WAIT_MS = 10000;   // give up looking for the target after this
+        const SETTLE_MS = 6000;      // keep re-aligning for this long after the first scroll
+        const FALLBACK_ID = 'feed';  // unknown/legacy ids land on the feed
 
-                    // Get element position
-                    const elementRect = element.getBoundingClientRect();
-                    const elementPosition = elementRect.top + window.pageYOffset;
+        let pollTimer;
+        let settleTimer;
+        let observer;
+        let userInteracted = false;
+        const startedAt = Date.now();
 
-                    // Dynamic offset based on element position or use viewport-based positioning
-                    let offsetPosition;
-
-                    // Option 1: Center the element in the viewport
-                    const viewportCenter = window.innerHeight / 2;
-                    offsetPosition = elementPosition - viewportCenter;
-
-                    // Option 2: Or use a percentage-based approach
-                    // const offsetFromTop = window.innerHeight * 0.2; // 20% from top
-                    // offsetPosition = elementPosition - navbarHeight - offsetFromTop;
-
-                    console.log('Window height:', window.innerHeight);
-                    console.log('Viewport center:', viewportCenter);
-                    console.log('Element position:', elementPosition);
-                    console.log('Final offset position:', offsetPosition);
-
-                    window.scrollTo({
-                        top: Math.max(0, offsetPosition), // Prevent negative scroll
-                        behavior: 'smooth'
-                    });
-
-                    console.log('Scrolled to element:', scrollTarget, 'at position:', offsetPosition);
-                }
-            };
-
-            // Wait longer in production and after images might load
-            const delay = process.env.NODE_ENV === 'production' ? 1000 : 300;
-            setTimeout(attemptScroll, delay);
-        }
-    }, [isReady, scrollTarget]);
-
-    // Also add this effect to handle window resize (if navbar height changes)
-    useEffect(() => {
-        const handleResize = () => {
-            if (scrollTarget && document.getElementById(scrollTarget)) {
-                // Re-scroll on resize after a delay
-                setTimeout(() => {
-                    const element = document.getElementById(scrollTarget);
-                    if (element) {
-                        const navbar = document.querySelector('nav') || document.querySelector('.navbar');
-                        const navbarHeight = navbar ? navbar.offsetHeight : 0;
-                        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-                        const offsetPosition = elementPosition - navbarHeight - 20;
-
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
-                }, 100);
-            }
+        const targetTop = (element) => {
+            const navbar = document.querySelector('nav') || document.querySelector('.navbar');
+            const navbarHeight = navbar ? navbar.offsetHeight : 0;
+            return Math.max(0, element.getBoundingClientRect().top + window.scrollY - navbarHeight - 20);
         };
 
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, [scrollTarget]);
+        const stopAligning = () => {
+            userInteracted = true;
+            observer?.disconnect();
+            clearTimeout(settleTimer);
+        };
+        const interactionEvents = ['wheel', 'touchstart', 'keydown', 'mousedown'];
+        interactionEvents.forEach((e) => window.addEventListener(e, stopAligning, { passive: true }));
+
+        const scrollToElement = (element) => {
+            window.scrollTo({ top: targetTop(element), behavior: 'smooth' });
+
+            // Re-align if content above the target changes size (images, fonts, audio players)
+            observer = new ResizeObserver(() => {
+                if (userInteracted) return;
+                const top = targetTop(element);
+                if (Math.abs(window.scrollY - top) > 4) {
+                    window.scrollTo({ top, behavior: 'auto' });
+                }
+            });
+            observer.observe(document.body);
+            settleTimer = setTimeout(() => observer.disconnect(), SETTLE_MS);
+        };
+
+        const poll = () => {
+            if (userInteracted) return;
+            const element = document.getElementById(scrollTarget);
+            if (element) {
+                scrollToElement(element);
+                return;
+            }
+            // Feed renders every post when a target is set, so once any post is on
+            // screen a missing id is unknown/legacy: fall back to the feed section.
+            const feedRendered = document.querySelector(`#${FALLBACK_ID} [id^="post-"]`);
+            if (feedRendered || Date.now() - startedAt >= MAX_WAIT_MS) {
+                const fallback = document.getElementById(FALLBACK_ID);
+                if (fallback) scrollToElement(fallback);
+                return;
+            }
+            pollTimer = setTimeout(poll, POLL_MS);
+        };
+
+        poll();
+
+        return () => {
+            clearTimeout(pollTimer);
+            clearTimeout(settleTimer);
+            observer?.disconnect();
+            interactionEvents.forEach((e) => window.removeEventListener(e, stopAligning));
+        };
+    }, [isReady, scrollTarget]);
 
     return (
         <>

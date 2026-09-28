@@ -93,6 +93,10 @@ const postsSource = fs.readFileSync(POSTS_FILE, "utf8");
 const created = [];
 const missing = [];
 
+// Stable ids: oldest = 1, each new post gets max + 1 (used in shared links)
+let nextId =
+  Math.max(0, ...[...postsSource.matchAll(/^\s*id: (\d+),/gm)].map((m) => Number(m[1]))) + 1;
+
 let entries = "";
 for (const post of posts) {
   if (postsSource.includes(`date: "${post.date}"`)) continue;
@@ -116,6 +120,7 @@ for (const post of posts) {
     : "";
   entries += `  {
     title: "TODO",
+    id: ${nextId++},
     date: "${post.date}", // Formato YYYY-MM-DD
 ${imageLines}    audio: "/audio/${post.date}${audio.ext}",
     content: \`

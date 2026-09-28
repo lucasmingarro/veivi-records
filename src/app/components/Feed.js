@@ -19,9 +19,10 @@ export default function Feed({ scrollTarget, onContentLoaded }) {
   useEffect(() => {
     const sortedPosts = [...postsData].sort(
       (a, b) => new Date(b.date) - new Date(a.date)
-    ).map((post, index) => ({
+    ).map((post) => ({
       ...post,
-      id: post.id || `post-${index}`
+      // Stable id from posts.js (oldest = 1) so shared links never shift
+      id: `post-${post.id}`
     }));
 
     setPosts(sortedPosts);
