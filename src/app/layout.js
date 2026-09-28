@@ -2,6 +2,7 @@ import "../app/assets/css/tailwind.css";
 import '../app/assets/css/materialdesignicons.min.css';
 import { Poppins } from 'next/font/google';
 import Head from "next/head";
+import Script from "next/script";
 import { Toaster } from 'react-hot-toast'; // 👈 Importá el Toaster
 
 const poppins = Poppins({
@@ -75,6 +76,12 @@ export default function RootLayout({ children }) {
         className={`${poppins.variable} font-poppins text-base text-black dark:text-white dark:bg-slate-900`}
       >
         {children}
+        {/* Contador de visitas simple (GoatCounter). Panel: https://veivirecords.goatcounter.com */}
+        <Script
+          data-goatcounter="https://veivirecords.goatcounter.com/count"
+          src="//gc.zgo.at/count.js"
+          strategy="afterInteractive"
+        />
         <Toaster
           position="top-right"
           toastOptions={{
