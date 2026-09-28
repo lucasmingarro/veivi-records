@@ -1,5 +1,36 @@
 const posts = [
   {
+    title: "There is too much to say and too much to feel",
+    date: "2026-09-12", // Formato YYYY-MM-DD
+    image: "/images/tracks/2026-09-12.jpeg",
+    imagePosition: "right", // left or right
+    audio: "/audio/2026-09-12.mpeg",
+    content: `
+Queridines,
+Un flashback....
+
+Saludos,
+Veivi Récords`,
+  },
+  {
+    title: "Cambios",
+    date: "2026-09-17", // Formato YYYY-MM-DD
+    audio: "/audio/2026-09-17.mpeg",
+    content: `
+Queridines,
+Saludos,
+Veivi Récords`,
+  },
+  {
+    title: "",
+    date: "2026-09-24", // Formato YYYY-MM-DD
+    audio: "/audio/2026-09-24.mp4",
+    content: `
+Bonsoir Queridines,
+Saludos,
+Veivi Récords`,
+  },
+  {
     title: "Era hermoso",
     date: "2026-07-23", // Formato YYYY-MM-DD
     audio: "/audio/2026-07-23.mpeg",
@@ -11,7 +42,7 @@ And I was free
 Needed nobody
 It was beautiful
 
-Saludos, 
+Saludos,
 Veivi Récords`,
   },
   {
