@@ -1,5 +1,54 @@
 const posts = [
   {
+    title: "No bombardeen Buenos Aires",
+    id: 55,
+    date: "2026-10-23", // Formato YYYY-MM-DD
+    image: "/images/tracks/2026-10-23.jpeg",
+    imagePosition: "left", // left or right
+    audio: "/audio/2026-10-23.mpeg",
+    content: `
+Feliz cumple, maestro!
+
+Saludos,
+Veivi Récords`,
+  },
+  {
+    title: "Do not go gentle into that good night",
+    id: 56,
+    date: "2026-10-31", // Formato YYYY-MM-DD
+    image: "/images/tracks/2026-10-31.jpeg",
+    imagePosition: "left", // left or right
+    audio: "/audio/2026-10-31.mpeg",
+    content: `
+Queridines
+Hacia el dark side.
+
+Do not go gentle into that good night,
+Old age should burn and rave at close of day;
+Rage, rage against the dying of the light.
+— Dylan Thomas
+
+Saludos,
+Veivi Récords`,
+  },
+  {
+    title: "I love you more than moments",
+    id: 57,
+    date: "2026-11-07", // Formato YYYY-MM-DD
+    image: "/images/tracks/2026-11-07.jpg",
+    imagePosition: "right", // left or right
+    audio: "/audio/2026-11-07.mpeg",
+    content: `
+Queridines,
+
+Forever – is composed of Nows –
+'Tis not a different time –
+— Emily Dickinson
+
+Saludos,
+Veivi Récords`,
+  },
+  {
     title: "There is too much to say and too much to feel",
     id: 52,
     date: "2026-09-12", // Formato YYYY-MM-DD
